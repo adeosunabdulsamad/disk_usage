@@ -5,7 +5,6 @@ import psutil as ps
 email_address = os.environ.get('EMAIL_USER')
 email_password = os.environ.get('EMAIL_PASSWORD')
 D = []
-url = 'The disk usage is about to be exhausted'
 partitions = ps.disk_partitions()
 for partition in partitions:
     usage = ps.disk_usage(partition.mountpoint)
